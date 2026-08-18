@@ -1,0 +1,35 @@
+{
+  "name": "genpark-universal-mcp-tool-protocol-gateway-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Universal Model Context Protocol (MCP) gateway adapter linking REST APIs & CLI tools to LLM agents.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "mcp-gateway",
+    "model-context-protocol",
+    "cursor-mcp",
+    "claude-desktop-tool",
+    "universal-adapter"
+  ],
+  "inputs": {
+    "target_tool_definition": {
+      "type": "object"
+    },
+    "protocol_version": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "mcp_server_config_json": {
+      "type": "object"
+    },
+    "exposed_tools_count": {
+      "type": "integer"
+    },
+    "gateway_active": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
